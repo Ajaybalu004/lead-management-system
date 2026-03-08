@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Lead Management System</title>
-  <link rel="stylesheet" href="style.css">
+<title>Lead Management System</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <h1>Lead Management System</h1>
 
 <h2>Add Lead</h2>
-<input type="text" id="name" placeholder="Lead Name">
-<input type="email" id="email" placeholder="Email">
+
+<input id="name" placeholder="Lead Name">
+<input id="email" placeholder="Email">
 <button onclick="addLead()">Add Lead</button>
 
 <h2>Leads</h2>
 <ul id="leadList"></ul>
+
+<h2>Customers</h2>
+<ul id="customerList"></ul>
+
+<h2>Tasks</h2>
+<input id="taskText" placeholder="Task description">
+<button onclick="addTask()">Add Task</button>
+
+<ul id="taskList"></ul>
 
 <script src="script.js"></script>
 
